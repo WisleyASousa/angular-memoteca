@@ -9,6 +9,8 @@ import { CriarPensamentoComponent } from './components/pensamentos/criar-pensame
 import { FormsModule } from '@angular/forms';
 import { ListarPensamentoComponent } from './components/pensamentos/listar-pensamento/listar-pensamento.component';
 import { PensamentoComponent } from './components/pensamentos/pensamento/pensamento.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ExcluirPensamentoComponent } from './components/pensamentos/excluir-pensamento/excluir-pensamento.component';
 
 @NgModule({
   // incluir os compnentes, diretivas e types.
@@ -19,12 +21,14 @@ import { PensamentoComponent } from './components/pensamentos/pensamento/pensame
     CriarPensamentoComponent,
     ListarPensamentoComponent,
     PensamentoComponent,
+    ExcluirPensamentoComponent,
   ],
   // incluir os modulos
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   // classes de servicos
   providers: [],
